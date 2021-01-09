@@ -1,9 +1,9 @@
 fn main() {
-    let n: u64 = 20;
+    let n: u128 = 20;
     println!("{} Fibonacci is {}", n, slow_fibonacci(n));
 }
 
-fn slow_fibonacci(n: u64) -> u64 {
+fn slow_fibonacci(n: u128) -> u128 {
     if n == 1 {
         return 1;
     } else if n <= 0 {
