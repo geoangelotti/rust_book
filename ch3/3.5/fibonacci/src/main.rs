@@ -14,14 +14,9 @@ fn slow_fibonacci(n: u128) -> u128 {
 }
 
 fn faster_fibonacci(n: u128) -> u128 {
-    if n == 1 {
-        return 1;
-    } else if n <= 0 {
-        return 0;
-    }
-    let mut a: u128 = 1;
-    let mut b: u128 = 2;
-    for _ in 0..(n - 2) {
+    let mut a: u128 = 0;
+    let mut b: u128 = 1;
+    for _ in 0..(n) {
         let c: u128 = a + b;
         a = b;
         b = c;
