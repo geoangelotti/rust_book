@@ -1,7 +1,7 @@
 fn main() {
-    let s1 = String::from("hellο");
+    let mut s1 = String::from("hellο");
 
-    change(&s1);
+    change(&mut s1);
 
     let len = calculate_length(&s1);
 
@@ -12,6 +12,6 @@ fn calculate_length(s: &String) -> usize {
     s.len()
 }
 
-fn change(some_string: &String) {
+fn change(some_string: &mut String) {
     some_string.push_str(", wοrld");
 }
