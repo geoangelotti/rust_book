@@ -16,8 +16,15 @@ fn main() {
 
     let r3 = &mut s; // no problem
     println!("{}", r3);
+
+    let reference_to_nothing = dangle();
 }
 
+fn dangle() -> &String {
+    let s = String::from("hello");
+
+    &s
+}
 fn calculate_length(s: &String) -> usize {
     s.len()
 }
