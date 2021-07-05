@@ -13,6 +13,8 @@ fn main() {
     // this works too, without the slice syntax!
     let word = first_word(my_string_literal);
     println!("the first word is: {}", word);
+
+    other_slices();
 }
 
 fn first_word(s: &str) -> &str {
@@ -25,4 +27,10 @@ fn first_word(s: &str) -> &str {
     }
 
     &s[..]
+}
+
+fn other_slices() {
+    let a = [1, 2, 3, 4, 5];
+    let slice = &a[1..3];
+    assert_eq!(slice, &[2, 3]);
 }
