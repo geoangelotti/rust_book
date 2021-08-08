@@ -36,4 +36,14 @@ fn main() {
     println!("The first element is: {}", first);
 
     v.push(6);
+
+    let v = vec![100, 32, 57];
+    for i in &v {
+        println!("{}", i);
+    }
+
+    let mut v = vec![100, 32, 57];
+    for i in &mut v {
+        *i += 50;
+    }
 }
