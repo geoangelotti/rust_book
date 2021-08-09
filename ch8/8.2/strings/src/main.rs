@@ -1,5 +1,5 @@
 fn main() {
-    let hello = "Здравствуйте";
-
-    let s = &hello[0..1];
+    for c in "नमस्ते".chars() {
+        println!("{}", c);
+    }
 }
