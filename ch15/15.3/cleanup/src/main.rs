@@ -12,6 +12,7 @@ fn main() {
     let c = CustomSmartPointer {
         data: String::from("my stuff"),
     };
+    c.drop();
     let d = CustomSmartPointer {
         data: String::from("other stuff"),
     };
